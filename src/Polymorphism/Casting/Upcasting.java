@@ -9,10 +9,10 @@ class UpcastingParent{
 }
 public class Upcasting extends UpcastingParent {
 
-    //   @Override
-//    int sum(int a, int b) {
-//        return a-b;
-//    }
+       @Override
+    int sum(int a, int b) {
+        return a-b;
+    }
     int sub(int a,int b){
         return a-b;
     }
@@ -22,7 +22,8 @@ public class Upcasting extends UpcastingParent {
         UpcastingParent obj=new Upcasting();
         int res=obj.sum(10,20);
         System.out.println("Sum : "+res);
-        //int res2=obj.sub(10,5); i cannot access sub() of child using upcasting
+        //Cannot resolve method 'sub' in 'UpcastingParent'
+        //int res2=obj.sub(10,5);// i cannot access sub() of child using upcasting
 
         //parent class method
         int mul=obj.multiply(5,2);

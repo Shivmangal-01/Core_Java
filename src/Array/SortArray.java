@@ -5,7 +5,7 @@ public class SortArray {
         int []arr={5,2,8,1,3};
         //sort array in ascending order
         for(int i=0; i<arr.length;i++){
-            for(int j=0;j<arr.length;j++){
+            for(int j=0;j<arr.length-1;j++){
                 if(arr[i]<arr[j]){
                     int temp=arr[i];
                     arr[i]=arr[j];
