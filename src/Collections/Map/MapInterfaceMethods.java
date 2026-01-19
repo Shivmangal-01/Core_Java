@@ -78,6 +78,9 @@ public class MapInterfaceMethods {
 
         System.out.println(map.equals(map2));
 
+        //entrySet
+        System.out.println(map.entrySet());
+
 
 
 
