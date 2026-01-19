@@ -23,5 +23,8 @@ public class MapDemo {
         System.out.println("Values : "+map.values());
         System.out.println("Key-Value : "+map.entrySet());
 
+        map.put(55,"D");
+        System.out.println(map);
+
     }
 }
