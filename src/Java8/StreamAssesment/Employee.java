@@ -248,6 +248,9 @@ public class Employee {
         System.out.println("Age : "+oldEmployee.getAge());
         System.out.println("Department : "+oldEmployee.getDepartment());
 
+        Map<String,Long>empcount=employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+        System.out.println(empcount);
+
 
 
 
